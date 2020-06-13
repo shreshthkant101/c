@@ -65,6 +65,10 @@ class Game{
             player.distance += 50;
             player.update();
         }
+        if(mousePressed && player.index != null){
+            player.distance += 50;
+            player.update();
+        }
         if(player.distance>3860){
             gameState = 2;
         }
